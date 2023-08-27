@@ -6,6 +6,10 @@ public class Config
 {
     public string Token { get; set; }
     public ulong GuildId { get; set; }
+    public ulong ChannelId { get; set; }
+    public string TimesMessage { get; set; }
+    public string MoviesMessage { get; set; }
+    public ulong CreatorMessageId { get; set; }
     
     internal static async Task<Config?> Load()
     {
